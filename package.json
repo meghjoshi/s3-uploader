@@ -1,0 +1,142 @@
+{
+  "_args": [
+    [
+      "s3-uploader-v1",
+      "/var/www/html/blog-api"
+    ]
+  ],
+  "_from": "s3-uploader-v1@latest",
+  "_id": "s3-uploader-v1@2.0.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/s3-uploader-v1",
+  "_nodeVersion": "4.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/s3-uploader-v1-2.0.3.tgz_1471642383004_0.14992910786531866"
+  },
+  "_npmUser": {
+    "email": "hans.kristian.flaatten@dnt.no",
+    "name": "turistforeningen"
+  },
+  "_npmVersion": "2.15.9",
+  "_phantomChildren": {
+    "lodash": "4.16.4"
+  },
+  "_requested": {
+    "name": "s3-uploader-v1",
+    "raw": "s3-uploader-v1",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/s3-uploader-v1/-/s3-uploader-v1-2.0.3.tgz",
+  "_shasum": "c5de916b0b8fe923add2be90ffda90d04b871538",
+  "_shrinkwrap": null,
+  "_spec": "s3-uploader-v1",
+  "_where": "/var/www/html/blog-api",
+  "author": {
+    "email": "opensource@turistforeningen.no",
+    "name": "Den Norske Turistforening",
+    "url": "DNT"
+  },
+  "bugs": {
+    "url": "https://github.com/Turistforeningen/node-s3-uploader-v1/issues"
+  },
+  "contributors": [
+    {
+      "email": "havard.ranum@bouvet.no",
+      "name": "Håvard Ranum"
+    },
+    {
+      "email": "hans@starefossen.com",
+      "name": "Hans Kristian Flaatten"
+    },
+    {
+      "email": "anthonyringoet@gmail.com",
+      "name": "Anthony Ringoet"
+    },
+    {
+      "email": "lfreneda@gmail.com",
+      "name": "Luiz Freneda"
+    },
+    {
+      "email": "me@codemanki.com",
+      "name": "Oleksii Sribnyi"
+    }
+  ],
+  "dependencies": {
+    "async": "^2.0.0",
+    "aws-sdk": "^2.4.1",
+    "im-metadata": "^3.0.0",
+    "im-resize": "^2.3.1",
+    "node-uuid": "^1.4.7"
+  },
+  "description": "Resize, rename, and upload images to AWS S3",
+  "devDependencies": {
+    "@starefossen/rand-path": "^2.0.0",
+    "codacy-coverage": "^2.0.0",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb-base": "^5.0.2",
+    "eslint-plugin-import": "^1.13.0",
+    "greenkeeper-postpublish": "^1.0.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^3.0.0",
+    "nsp": "^2.4.0",
+    "semantic-release": "^4.3.5"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "c5de916b0b8fe923add2be90ffda90d04b871538",
+    "tarball": "https://registry.npmjs.org/s3-uploader-v1/-/s3-uploader-v1-2.0.3.tgz"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "gitHead": "191d07dc65a27b0c3159d9b055831edfcecc03c8",
+  "homepage": "https://github.com/Turistforeningen/node-s3-uploader-v1#readme",
+  "keywords": [
+    "aws",
+    "s3",
+    "imagemagic",
+    "image",
+    "resize",
+    "rename",
+    "upload",
+    "versions"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "hans.kristian.flaatten@turistforeningen.no",
+      "name": "turistforeningen"
+    }
+  ],
+  "name": "s3-uploader-v1",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Turistforeningen/node-s3-uploader.git"
+  },
+  "scripts": {
+    "codacy-coverage": "codacy-coverage",
+    "cover": "istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- -r test/support/env test/**",
+    "greenkeeper-postpublish": "greenkeeper-postpublish",
+    "lint": "eslint index.js test",
+    "nsp": "nsp check",
+    "semantic-release": "semantic-release",
+    "start": "supervisor index.js",
+    "test": "mocha -b -c --check-leaks -R tap -r test/support/env test/**",
+    "test:watch": "mocha -w -b -c --check-leaks -R progress -r test/support/env test/**"
+  },
+  "version": "2.0.3"
+}
